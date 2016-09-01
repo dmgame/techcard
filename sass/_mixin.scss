@@ -1,0 +1,7 @@
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
+}
+@mixin border($borderWidth, $borderType, $borderColor){
+	border: $borderWidth $borderType $borderColor;
+}

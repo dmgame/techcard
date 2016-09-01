@@ -1,0 +1,41 @@
+body{
+	background: #fff;
+	margin: 0 auto;
+	font: $generalFontSize/1 $generalFont, arial, helvetica, sans-serif;
+	padding-bottom: 56px;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited{
+	text-decoration: none;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: none;
+	max-width: 100%;
+}
+input,textarea,button{
+	outline: none;
+	border: 0;
+	padding: 0;
+}
+textarea{
+	resize: vertical;
+}
+input[type="submit"], button{
+	cursor: pointer;
+}

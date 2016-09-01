@@ -1,0 +1,188 @@
+// before standart style
+%beforeStandartStyle{
+	content: "";
+	display: inline-block;
+}
+
+// animation standart
+%transitionLiner{
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+%verticalAlignInlineBlock{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%NavLinkStyle{
+  li{
+    display: inline-block;
+
+      & + li{
+        margin-left: 27px;
+      }
+      a{
+        color: #2e2e2e;
+        font-size: 1.3em;
+        font-family: 'proxima_nova_ltsemibold';
+        text-transform: uppercase;
+        @extend %transitionLiner;
+          &:hover{
+            color: #4eb0d8;
+          }
+      }
+    }
+  
+}
+// класс для віравнивани любого блока по вертикали
+.vertical-align {
+  &:before {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    margin-left:-5px;
+  }
+  & > *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+// bg clases
+.grey-bg{
+  background: #ededed;
+}
+
+.darck-grey-bg{
+  background: #2e2e2e;
+}
+// отмена отступов внешних
+.m-0{
+  margin: 0 !important;
+}
+
+// отмена бордеров
+.border-none{
+  border: none !important;
+}
+
+// text standart style
+p{
+  font-family: 'proxima_nova_rgregular';
+  font-size: 1.8em;
+  color: #909090;
+  line-height: 1.3333;
+}
+
+h6, h5, h4{
+  font-size: 2.1em;
+  font-family: 'proxima_nova_ltsemibold';
+  color: #2e2e2e;
+  text-transform: uppercase;
+}
+h6{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 2.4em;
+}
+
+// btn style
+%btnDefault{
+  display: inline-block;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  line-height: 33px;
+  text-align: center;
+  font-family: 'proxima_nova_ltsemibold';
+  border-radius: 7px;
+  color: #fff; 
+  padding: 0;
+  
+    &:focus, &:active:focus{
+      outline: none;
+    }
+
+}
+%btnTransparent{
+  border: 2px solid #4eb0d8;
+  color: #4eb0d8; 
+  width: 179px;
+  background: transparent;
+    &:hover{
+      background: #4eb0d8;
+      color: #fff; 
+    }
+}
+%btnRed{
+  background: #e54b4b;
+  border: 2px solid #e54b4b;
+    &:hover{
+       background: darken( #e54b4b, 10% );
+       color: #fff;
+       border-color: darken( #e54b4b, 10% );
+    }
+    &:active{
+      color: #fff !important;
+    }
+    &:focus{
+      color: #fff !important;
+    }
+}
+%btnBlue{
+  background: #4eb0d8;
+  border: 2px solid #4eb0d8;
+    &:hover{
+       background: darken( #4eb0d8, 10% );
+       color: #fff;
+       border-color: darken( #4eb0d8, 10% );
+    }
+    &:active{
+      color: #fff !important;
+    }
+    &:focus{
+      color: #fff !important;
+    }
+}
+
+
+.btn, a.btn{
+  @extend %btnDefault;
+  @extend %transitionLiner;
+    &.blue-border{
+      @extend %btnTransparent;
+    }
+    &.red-bg{
+      @extend %btnRed;
+      padding: 0 20px 0 16px;
+        &:before{
+          @extend %beforeStandartStyle;
+          
+          background: url('../img/sprite.png') no-repeat;
+          background-position: -73px -97px; 
+          width: 18px; 
+          height: 13px;
+          margin-right: 4px;
+        }
+    }
+    &.blue-bg{
+      @extend %btnBlue;
+      padding: 0 30px;
+    }
+}
+
+input[type="text"]{
+  height: 37px;
+  padding: 0 20px;
+  color: #2e2e2e;
+  font-size: 1.8em;
+  border-radius: 7px;
+  vertical-align: middle;
+    & + *{
+      margin-left: 15px;
+    }
+}
