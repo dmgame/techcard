@@ -513,10 +513,17 @@ footer{
 			}
 		}
 	}
+	.call-to-action .form-block form{
+		margin-top: 10px;
+		width: 100%;
+    	text-align: center;
+	}
 }
 @media (max-width: 767px){
 	.call-to-action{
+		height: auto;
 		.video-wrap{
+			height: 585px;
 			.action-text{
 				width: 85%;
 			}
@@ -563,6 +570,9 @@ footer{
 	.review{
 		margin-bottom: 30px;
 	}
+	.call-to-action .form-block{
+		position: static;
+	}
 	footer{
 		.paymet-type{
 			float: none;
@@ -570,7 +580,24 @@ footer{
 			margin-top: 20px;
 		}
 	}
-	
+	.advantage-img{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 660px){
+	.call-to-action{
+		background: url('../img/video-bg-480.jpg') no-repeat center;
+		background-size: cover;
+	}
+	.call-to-action .form-block form input{
+		width: 100%;
+		
+			& + button{
+				margin-top: 10px;
+				width: 100%;
+				margin-left: 0;
+			}
+	}
 }
 @media (max-width: 599px){
 	.call-to-action{
@@ -606,7 +633,6 @@ footer{
 	.call-to-action{
 		.video-wrap{
 			.action-text{
-				padding-top: 15%;
 					h4{
 						font-size: 2em;
 					}
@@ -623,6 +649,7 @@ footer{
 					left: 0%;
     				padding: 0 10px;
     				top: -122px;
+    				width: 100%;
 					.btn{
 						width: 100%;
 						margin: 0;
@@ -643,10 +670,16 @@ footer{
 	} 
 	.advantages-wrap{
 		.advantage{
-			.col-xs-5 {
+			.hidden-479 {
 				display: none;
 			}
+			.visible-479{
+				display: block !important;
+			}
 			.col-xs-7{
+				width: 100% !important;
+			}
+			.col-xs-5{
 				width: 100% !important;
 			}
 			.advantage-text{
@@ -665,6 +698,14 @@ footer{
 				width: 150px;
 				font-size: 1.4em;
 			}
+		}
+	}
+	.call-to-action .form-block form input{
+
+		
+		& + button{
+			font-size: 1.4em;
+			padding: 0 10px;
 		}
 	} 
 }

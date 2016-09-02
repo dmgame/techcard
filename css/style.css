@@ -9845,6 +9845,11 @@ input[type="text"] + * {
   margin-left: 15px;
 }
 
+/* line 189, ../sass/_default-clases.scss */
+.visible-479 {
+  display: none;
+}
+
 /* line 1, ../sass/_reset.scss */
 body {
   background: #fff;
@@ -10456,162 +10461,216 @@ footer .paymet-type li.visa {
   footer .footer-nav li + li {
     margin-left: 13px;
   }
+
+  /* line 516, ../sass/style.scss */
+  .call-to-action .form-block form {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
-  /* line 520, ../sass/style.scss */
+  /* line 523, ../sass/style.scss */
+  .call-to-action {
+    height: auto;
+  }
+  /* line 525, ../sass/style.scss */
+  .call-to-action .video-wrap {
+    height: 585px;
+  }
+  /* line 527, ../sass/style.scss */
   .call-to-action .video-wrap .action-text {
     width: 85%;
   }
-  /* line 524, ../sass/style.scss */
+  /* line 531, ../sass/style.scss */
   .call-to-action .video-wrap .call-to-action-btn-group .btn-wrap {
     left: 9%;
   }
-  /* line 528, ../sass/style.scss */
+  /* line 535, ../sass/style.scss */
   .call-to-action .video-wrap .download-list {
     left: 9%;
   }
-  /* line 531, ../sass/style.scss */
+  /* line 538, ../sass/style.scss */
   .call-to-action .video-wrap .play-video-btn {
     margin-right: 0;
   }
 
-  /* line 536, ../sass/style.scss */
+  /* line 543, ../sass/style.scss */
   .process {
     margin-bottom: 50px;
   }
-  /* line 538, ../sass/style.scss */
+  /* line 545, ../sass/style.scss */
   .process p {
     font-size: 2.2em;
     padding: 0 30px;
   }
 
-  /* line 544, ../sass/style.scss */
+  /* line 551, ../sass/style.scss */
   .advantages-wrap .advantage {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  /* line 548, ../sass/style.scss */
+  /* line 555, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text h4, .advantages-wrap .advantage .advantage-text h5 {
     font-size: 1.6em;
   }
-  /* line 551, ../sass/style.scss */
+  /* line 558, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text span {
     font-size: 1.2em;
   }
-  /* line 554, ../sass/style.scss */
+  /* line 561, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text p {
     font-size: 1.4em;
   }
-  /* line 556, ../sass/style.scss */
+  /* line 563, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text p br {
     display: none;
   }
 
-  /* line 563, ../sass/style.scss */
+  /* line 570, ../sass/style.scss */
   .review {
     margin-bottom: 30px;
   }
 
-  /* line 567, ../sass/style.scss */
+  /* line 573, ../sass/style.scss */
+  .call-to-action .form-block {
+    position: static;
+  }
+
+  /* line 577, ../sass/style.scss */
   footer .paymet-type {
     float: none;
     text-align: center;
     margin-top: 20px;
   }
+
+  /* line 583, ../sass/style.scss */
+  .advantage-img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 660px) {
+  /* line 588, ../sass/style.scss */
+  .call-to-action {
+    background: url("../img/video-bg-480.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  /* line 592, ../sass/style.scss */
+  .call-to-action .form-block form input {
+    width: 100%;
+  }
+  /* line 595, ../sass/style.scss */
+  .call-to-action .form-block form input + button {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 @media (max-width: 599px) {
-  /* line 578, ../sass/style.scss */
+  /* line 605, ../sass/style.scss */
   .call-to-action .video-wrap .action-text {
     width: 96%;
   }
-  /* line 582, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .call-to-action .video-wrap .call-to-action-btn-group .btn-wrap {
     left: 3%;
   }
-  /* line 586, ../sass/style.scss */
+  /* line 613, ../sass/style.scss */
   .call-to-action .video-wrap .download-list {
     left: 3%;
   }
-  /* line 589, ../sass/style.scss */
+  /* line 616, ../sass/style.scss */
   .call-to-action .video-wrap .play-video-btn {
     right: 17%;
   }
 
-  /* line 594, ../sass/style.scss */
+  /* line 621, ../sass/style.scss */
   .footer-nav {
     display: none;
   }
 
-  /* line 599, ../sass/style.scss */
+  /* line 626, ../sass/style.scss */
   footer span {
     display: block;
     text-align: center;
   }
 }
 @media (max-width: 479px) {
-  /* line 608, ../sass/style.scss */
-  .call-to-action .video-wrap .action-text {
-    padding-top: 15%;
-  }
-  /* line 610, ../sass/style.scss */
+  /* line 636, ../sass/style.scss */
   .call-to-action .video-wrap .action-text h4 {
     font-size: 2em;
   }
-  /* line 614, ../sass/style.scss */
+  /* line 640, ../sass/style.scss */
   .call-to-action .video-wrap .download-list {
     bottom: -330px;
   }
-  /* line 617, ../sass/style.scss */
+  /* line 643, ../sass/style.scss */
   .call-to-action .video-wrap .play-video-btn {
     top: 255px;
     right: 10%;
   }
-  /* line 622, ../sass/style.scss */
+  /* line 648, ../sass/style.scss */
   .call-to-action .video-wrap .call-to-action-btn-group .btn-wrap {
     left: 0%;
     padding: 0 10px;
     top: -122px;
+    width: 100%;
   }
-  /* line 626, ../sass/style.scss */
+  /* line 653, ../sass/style.scss */
   .call-to-action .video-wrap .call-to-action-btn-group .btn-wrap .btn {
     width: 100%;
     margin: 0;
   }
-  /* line 630, ../sass/style.scss */
+  /* line 657, ../sass/style.scss */
   .call-to-action .video-wrap .call-to-action-btn-group .btn-wrap .btn + .btn {
     margin-top: 10px;
   }
 
-  /* line 640, ../sass/style.scss */
+  /* line 667, ../sass/style.scss */
   .process p {
     padding: 0 10px;
   }
 
-  /* line 646, ../sass/style.scss */
-  .advantages-wrap .advantage .col-xs-5 {
+  /* line 673, ../sass/style.scss */
+  .advantages-wrap .advantage .hidden-479 {
     display: none;
   }
-  /* line 649, ../sass/style.scss */
+  /* line 676, ../sass/style.scss */
+  .advantages-wrap .advantage .visible-479 {
+    display: block !important;
+  }
+  /* line 679, ../sass/style.scss */
   .advantages-wrap .advantage .col-xs-7 {
     width: 100% !important;
   }
-  /* line 653, ../sass/style.scss */
+  /* line 682, ../sass/style.scss */
+  .advantages-wrap .advantage .col-xs-5 {
+    width: 100% !important;
+  }
+  /* line 686, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text h5, .advantages-wrap .advantage .advantage-text h4 {
     margin-bottom: 10px;
     font-size: 1.7em;
   }
-  /* line 657, ../sass/style.scss */
+  /* line 690, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text span {
     font-size: 1.3em;
   }
-  /* line 660, ../sass/style.scss */
+  /* line 693, ../sass/style.scss */
   .advantages-wrap .advantage .advantage-text p {
     font-size: 1.5em;
   }
-  /* line 664, ../sass/style.scss */
+  /* line 697, ../sass/style.scss */
   .advantages-wrap .advantage .btn.blue-border, .advantages-wrap .advantage a.btn.blue-border {
     width: 150px;
     font-size: 1.4em;
+  }
+
+  /* line 706, ../sass/style.scss */
+  .call-to-action .form-block form input + button {
+    font-size: 1.4em;
+    padding: 0 10px;
   }
 }
 /* MEDIA QUERY END */
