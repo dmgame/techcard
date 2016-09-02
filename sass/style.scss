@@ -266,7 +266,6 @@ footer{
 }
 .thanks-modal{
 	.modal-content{
-		height: 150px;
 		padding: 35px;
 			.btn{
 				margin-top: 20px;
@@ -399,6 +398,9 @@ footer{
 	h6{
 		font-size: 1.4em;
 	}
+	.hand-img{
+		display: none;	
+	}
 	.navbar-toggle{
 		
 		margin-bottom: 0;
@@ -422,6 +424,8 @@ footer{
 			background: #4eb0d8;
 			margin-top: 0;
 			padding: 0;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
 				li{
 					display: block;
 					text-align: center;
@@ -454,6 +458,52 @@ footer{
 			}
 		}
 	}
+	.call-to-action{
+		height: 585px;
+
+			.video-wrap{
+				width: 100%;
+				.btn{
+					margin-bottom: 0;
+				}
+				.download-list{
+					margin-top: 0;
+					position: absolute;
+    				bottom: -300px;
+    				left: 21%;
+				}
+				.call-to-action-btn-group{
+					width: 100%;
+					position: absolute;
+					top: 190px;
+    				left: 0;
+    				padding-top: 0 !important;
+    				height: 240px;
+    				.btn-wrap {
+    					position: absolute;
+    					top: -100px;
+    					left: 21%;
+    				}		
+					.btn.blue-bg{
+						width: 210px;
+						float: right;
+						margin-left: 30px;
+					}
+				}
+				.play-video-btn{
+					position: absolute;
+				    right: 20%;
+				    top: 122px;
+				}
+				.action-text{
+					width: 60%;
+				}
+			}
+	}
+	.form-block{
+
+
+	}
 	footer{
 		.footer-nav{
 			li{
@@ -464,4 +514,159 @@ footer{
 		}
 	}
 }
+@media (max-width: 767px){
+	.call-to-action{
+		.video-wrap{
+			.action-text{
+				width: 85%;
+			}
+			.call-to-action-btn-group{
+				.btn-wrap{
+					left: 9%;
+				}
+			} 
+			.download-list{
+				left: 9%;
+			}
+			.play-video-btn{
+				margin-right: 0;
+			}
+		} 
+	} 
+	.process{
+		margin-bottom: 50px;
+			p{
+				font-size: 2.2em;
+				padding: 0 30px;
+			}
+	}
+	.advantages-wrap {
+		.advantage{
+			padding-bottom: 20px;
+    		margin-bottom: 20px;
+    			.advantage-text{
+    				h4, h5{
+    					font-size: 1.6em;
+    				}
+    				span{
+    					font-size: 1.2em;
+    				}
+					p{
+						font-size: 1.4em;
+						br{
+							display: none;
+						}
+					}
+    			} 
+		}
+	}
+	.review{
+		margin-bottom: 30px;
+	}
+	footer{
+		.paymet-type{
+			float: none;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+	
+}
+@media (max-width: 599px){
+	.call-to-action{
+		.video-wrap{
+			.action-text{
+				width: 96%;
+			}
+			.call-to-action-btn-group{
+				.btn-wrap{
+					left: 3%;
+				}
+			} 
+			.download-list{
+				left: 3%;
+			}
+			.play-video-btn{
+				right: 17%;
+			}
+		} 
+	} 
+	.footer-nav{
+		display: none;
+
+	}
+	footer{
+		span{
+			display: block;
+			text-align: center;
+		}
+	} 
+}
+@media (max-width: 479px){
+	.call-to-action{
+		.video-wrap{
+			.action-text{
+				padding-top: 15%;
+					h4{
+						font-size: 2em;
+					}
+			}
+			.download-list{
+				bottom: -330px;
+			}
+			.play-video-btn{
+				top: 255px;
+				right: 10%;
+			}
+			.call-to-action-btn-group{
+				.btn-wrap{
+					left: 0%;
+    				padding: 0 10px;
+    				top: -122px;
+					.btn{
+						width: 100%;
+						margin: 0;
+
+						& + .btn{
+							margin-top: 10px;
+						}
+					}
+				}
+			} 
+
+		} 
+	}
+	.process{
+			p{
+				padding: 0 10px;
+			}
+	} 
+	.advantages-wrap{
+		.advantage{
+			.col-xs-5 {
+				display: none;
+			}
+			.col-xs-7{
+				width: 100% !important;
+			}
+			.advantage-text{
+				h5, h4{
+					margin-bottom: 10px;
+					font-size: 1.7em;
+				}
+				span{
+					font-size: 1.3em;
+				}
+				p{
+					font-size: 1.5em;
+				}
+			} 
+			.btn.blue-border, a.btn.blue-border{
+				width: 150px;
+				font-size: 1.4em;
+			}
+		}
+	} 
+}
+
 /* MEDIA QUERY END */
