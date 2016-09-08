@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>techcard</title>
+    <title>tachcard - плати легко</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
@@ -58,8 +58,8 @@
                   <div class="col-md-12 ">
                   
                     <img src="img/call-to-action-logo.png" alt="">
-                    <h4>плати легко. где хочешь.</h4>
-                    <p>это мобильное приложение<br> для очень простого<br> безналичного рассчета<br> в любой ситуации</p>
+                    <h4>плати легко. как хочешь.</h4>
+                    <p>это мобильное приложение<br> для очень простого<br> безналичного расчета<br> в любой ситуации</p>
                   </div>
                 </div>
                 <div class="call-to-action-btn-group">
@@ -73,10 +73,10 @@
                       <!-- <a href="#" class="btn blue-bg visible-xs visible-sm">получить ссылку</a> -->
                     </div>
                     
-                    <a href="" class="play-video-btn" data-toggle="modal" data-target=".videoModal"></a>
+                    <a href="" class="play-video-btn" data-toggle="modal" data-target=".videoModal" onclick="play()"></a>
                     <ul class="download-list">
                       <li><a href="https://www.dropbox.com/s/p54lt6pmigzzwpz/tc%20-%20product.pdf" class="download-icon" target="_blank"></a></li>
-                      <li><a href="#" class="fb"></a></li>
+                      <li><a href="https://www.facebook.com/tachcard/" class="fb" target="_blank"></a></li>
                     </ul>
                   </div>
                 </div>
@@ -104,10 +104,10 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-xs-12 col-md-8">
-                <form action="" class="pull-right ">
-                  <input type="text" name="phone" id="phone" placeholder="+38 0">
-                  <button type="submit" class="btn blue-bg" data-toggle="modal" data-target=".thanks-modal">получить ссылку на приложение</button>
+              <div class="col-xs-12 col-md-8 hidden-xs hidden-sm">
+                <form class="pull-right ">
+                  <input type="text" name="phone" id="phone" placeholder="+38" class="required">
+                  <button type="submit" class="btn blue-bg checkout">получить ссылку на приложение</button>
                 </form>
               </div>
             </div>
@@ -157,24 +157,24 @@
       <div class="partners grey-bg text-center">
         <div class="container">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-xs-12 col-sm-3">
               <div class="partner vertical-align">
-                <img src="img/partners/partners-vacaville.png" alt="">
+                <a href="#"><img src="img/partners/partners-vacaville.png" alt=""></a>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-12 col-sm-3 hidden-xs">
               <div class="partner vertical-align">
-                <img src="img/partners/partners-as.png" alt="">
+                <a href="#"><img src="img/partners/partners-as.png" alt=""></a>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-12 col-sm-3 hidden-xs">
               <div class="partner vertical-align">
-                <img src="img/partners/partners-opened.png" alt="">
+                <a href="#"><img src="img/partners/partners-opened.png" alt=""></a>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-12 col-sm-3 hidden-xs">
               <div class="partner vertical-align">
-                <img src="img/partners/partners-zimbra.png" alt="">
+                <a href="#"><img src="img/partners/partners-zimbra.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@
             <div class="row">
               <div class="col-xs-12 visible-479">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-1.jpg" alt="">
+                  <img src="img/1scan.gif" alt="">
                 </div>
               </div>
               <div class="col-xs-7 col-sm-6">
@@ -201,7 +201,7 @@
               </div>
               <div class="col-xs-5 col-sm-6 hidden-479">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-1.jpg" alt="">
+                  <img src="img/1scan.gif" alt="">
                 </div>
               </div>
             </div>
@@ -211,13 +211,13 @@
             <div class="row">
               <div class="col-xs-5 col-sm-6">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-2.jpg" alt="">
+                  <img src="img/2scan.gif" alt="">
                 </div>
               </div>
               <div class="col-xs-7 col-sm-6">
                 <div class="advantage-text">
                   <h4>простая оплата по QR коду</h4>
-                  <p>Легко получайте деньги на любой счет <br>с помощью QR кода.</p>
+                  <p>Легко оплачивайте с любого счета <br> просто сканируя QR код.</p>
                 </div>
               </div>
             </div>
@@ -227,20 +227,20 @@
             <div class="row">
               <div class="col-xs-12 visible-479">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-3.jpg" alt="">
+                  <img src="img/3scan.gif" alt="">
                 </div>
               </div>
               <div class="col-xs-7 col-sm-6">
                 <div class="advantage-text">
                   <h4>продажа по разовому QR коду</h4>
                   <span>для мерчанта</span>
-                  <p>Генерируйте виджет tachcard и сможете автоматически генерировать QR код для оплаты текущей суммы. Пользователь tachcard сможет оплачивать простым сканированием кода.</p>
+                  <p>Интегрируйте виджет tachcard и сможете автоматически генерировать QR код для оплаты текущей суммы. Пользователь tachcard сможет оплачивать простым сканированием кода.</p>
                   <a href="#" class="btn blue-border">узнать больше</a>
                 </div>
               </div>
               <div class="col-xs-5 col-sm-6 hidden-479">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-3.jpg" alt="">
+                   <img src="img/3scan.gif" alt="">
                 </div>
               </div>
             </div>
@@ -250,20 +250,20 @@
             <div class="row">
               <div class="col-xs-5 col-sm-6">
                 <div class="advantage-img text-center">
-                  <img src="img/advantages/advanteges-img-4.jpg" alt="">
+                   <img src="img/4scan.gif" alt="">
                 </div>
               </div>
               <div class="col-xs-7 col-sm-6">
                 <div class="advantage-text">
                   <h5>продажа по статическому QR коду</h5>
                   <span>для мерчанта</span>
-                  <p>Сгенерируйте статический QR код с фиксированной суммой и разместите его на любом ночителе. Пользователи tachcard могут совершать оплаты в любое время и в любом количестве. </p>
+                  <p>Сгенерируйте статический QR код с фиксированной суммой и разместите его на любом носителе. Пользователи tachcard смогут совершать оплаты в любое время и в любом количестве. </p>
                   <a href="#" class="btn blue-border">узнать больше</a>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
       <!-- advantages block end-->
@@ -284,11 +284,11 @@
                   </div>
                 </div>
                 <div class="review-text">
-                  <p>Отличное приложение! все работает, все интуитивно понятно и очень удобно. Деньги приходятв считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
+                  <p>Отличное приложение! Все работает, все интуитивно понятно и очень удобно. Деньги приходятв считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
               <div class="review">
                 <div class="review-head">
                   <div class="review-img">
@@ -300,11 +300,11 @@
                   </div>
                 </div>
                 <div class="review-text">
-                  <p>Отличное приложение! все работает, все интуитивно понятно и очень удобно. Деньги приходят в считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
+                  <p>Отличное приложение! Все работает, все интуитивно понятно и очень удобно. Деньги приходят в считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
               <div class="review">
                 <div class="review-head">
                   <div class="review-img">
@@ -316,7 +316,7 @@
                   </div>
                 </div>
                 <div class="review-text">
-                  <p>Отличное приложение! все работает, все интуитивно понятно и очень удобно. Деньги приходят в считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
+                  <p>Отличное приложение! Все работает, все интуитивно понятно и очень удобно. Деньги приходят в считанные минуты, в интернет-банкинге и то дольше идут. Очень советую, не пожалеете.</p>
                 </div>
               </div>
             </div>
@@ -356,10 +356,16 @@
 
     <!-- VIDEO MODAL START -->
     
-    <div class="modal fade bs-example-modal-lg videoModal" tabindex="-1" role="dialog">
+    <div class="modal fade bs-example-modal-lg videoModal" tabindex="-1" role="dialog" onclick="pause()">
       <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-header"> 
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="pause()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
         <div class="modal-content">
-          <iframe src="https://www.youtube.com/embed/ah6WcokdVEI" frameborder="0" allowfullscreen></iframe>
+          <iframe id="myvideo" src="https://www.youtube.com/embed/ah6WcokdVEI?enablejsapi=1" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -379,10 +385,10 @@
     <!-- THANKS MODAL END -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.maskedinput.js"></script>
-    <script src="js/main.js"></script>
+    <script async src="js/bootstrap.min.js"></script>
+    <script async src="http://www.youtube.com/iframe_api"></script>
+    <script async src="js/main.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+body{
+  padding-right: 0 !important;
+
+}
+
 // before standart style
 %beforeStandartStyle{
 	content: "";
@@ -28,7 +33,6 @@
         font-size: 1.3em;
         font-family: 'proxima_nova_ltsemibold';
         text-transform: uppercase;
-        @extend %transitionLiner;
           &:hover{
             color: #4eb0d8;
           }
@@ -36,6 +40,32 @@
     }
   
 }
+
+.modal-open{
+    .modal{
+       overflow: visible !important;
+      padding-right: 0 !important;
+      text-align: center;
+        &:before{
+          @extend %beforeStandartStyle;
+          height: 100%;
+          vertical-align: middle;
+        }
+        .modal-dialog{
+          vertical-align: middle;
+          display: inline-block;
+        }
+}
+ 
+    
+    
+}
+
+// класс ошибки ввода данных в форму
+.wrong-form{
+  border-color: #e54b4b !important;
+}
+
 // класс для віравнивани любого блока по вертикали
 .vertical-align {
   &:before {
@@ -122,9 +152,9 @@ h4{
   background: #e54b4b;
   border: 2px solid #e54b4b;
     &:hover{
-       background: darken( #e54b4b, 10% );
+       background: rgb(180, 90, 90);
        color: #fff;
-       border-color: darken( #e54b4b, 10% );
+       border-color: rgb(180, 90, 90);
     }
     &:active{
       color: #fff !important;
@@ -152,7 +182,6 @@ h4{
 
 .btn, a.btn{
   @extend %btnDefault;
-  @extend %transitionLiner;
     &.blue-border{
       @extend %btnTransparent;
     }
@@ -182,6 +211,7 @@ input[type="text"]{
   font-size: 1.8em;
   border-radius: 7px;
   vertical-align: middle;
+  border: 1px solid #ededed;
     & + *{
       margin-left: 15px;
     }
