@@ -359,7 +359,13 @@ $('button.btn').click(function(e) {
   e.preventDefault();
 });
 
+$('.play-video-btn').click(function() {
+  play()
+});
 
+$('.close, .modal').click(function() {
+  pause()
+});
 function onYouTubeIframeAPIReady() {
     ytplayer = new YT.Player('myvideo');
 }
